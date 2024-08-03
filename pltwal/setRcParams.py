@@ -15,7 +15,7 @@ colors = re.findall("""color\d{1,2}='(#.{6})'""", walstring)
 background = re.findall("""background='(#.{6})'""", walstring)[0]
 foreground = re.findall("""foreground='(#.{6})'""", walstring)[0]
 
-colorsReduced = colors[1:7] + colors[9:15]
+colorsReduced = colors[9:15] + colors[1:7]
 
 plt.rcParams["axes.facecolor"] = background
 plt.rcParams["axes.edgecolor"] = foreground
@@ -59,6 +59,6 @@ plt.rcParams["ytick.labelcolor"] = foreground
 
 plt.rcParams["axes.prop_cycle"] = mpl.cycler(color=colorsReduced)
 
-cmapwal = ListedColormap(colors[1:7], name="wal")
+cmapwal = ListedColormap(colors[9:15], name="wal")
 mpl.colormaps.register(cmap=cmapwal)
 plt.rcParams["image.cmap"] = "wal"
