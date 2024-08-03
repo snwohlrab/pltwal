@@ -6,6 +6,6 @@ a 'wal' cmap
 """
 
 __version__ = "0.1.0"
-__author__ = 'Sebastian Wohlrab'
+__author__ = "Sebastian Wohlrab"
 
 import pltwal.setRcParams
