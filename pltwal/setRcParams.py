@@ -2,7 +2,7 @@
 Creates a matplotlib cmap from the currently used pywal colorscheme
 """
 
-from matplotlib.colors import ListedColormap
+from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import re
@@ -59,6 +59,7 @@ plt.rcParams["ytick.labelcolor"] = foreground
 
 plt.rcParams["axes.prop_cycle"] = mpl.cycler(color=colorsReduced)
 
-cmapwal = ListedColormap(colors[9:15], name="wal")
+#cmapwal = ListedColormap(colors[9:15], name="wal")
+cmapwal = LinearSegmentedColormap.from_list("wal", colors[9:15])
 mpl.colormaps.register(cmap=cmapwal)
 plt.rcParams["image.cmap"] = "wal"

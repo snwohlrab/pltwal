@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='pltwal',
-    version='0.1.0',    
+    version='0.0.3',    
     description='Python package that uses pywal color scheme for matplotlib',
     url='',
     author='Sebastian Wohlrab',

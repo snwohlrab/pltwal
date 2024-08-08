@@ -3,7 +3,7 @@ requires = ["setuptools>=68.2.2"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "pltwal"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
   { name="Sebastian Wohlrab", email="sebastian.wohlrab@wohlrab.de" },
 ]
